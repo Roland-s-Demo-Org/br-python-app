@@ -175,7 +175,9 @@ dependencies = [
     { name = "jwcrypto" },
     { name = "lxml" },
     { name = "markdown" },
+    { name = "markdown-it-py" },
     { name = "marshmallow" },
+    { name = "msgpack" },
     { name = "multipart" },
     { name = "numexpr" },
     { name = "opentelemetry-instrumentation" },
@@ -183,9 +185,11 @@ dependencies = [
     { name = "paramiko" },
     { name = "pdfminer-six" },
     { name = "pillow" },
+    { name = "pip" },
     { name = "protobuf" },
     { name = "pyasn1" },
     { name = "pydantic-settings" },
+    { name = "pygments" },
     { name = "pymysql" },
     { name = "pynacl" },
     { name = "pypdf2" },
@@ -229,7 +233,9 @@ requires-dist = [
     { name = "jwcrypto", specifier = "==1.4+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "lxml", specifier = "==6.0.4+aikido.5", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "markdown", specifier = "==3.4.4+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
+    { name = "markdown-it-py", specifier = "==2.1.0+aikido.5", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "marshmallow", specifier = "==3.21.3+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
+    { name = "msgpack", specifier = "==1.2.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "multipart", specifier = "==1.2.1+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "numexpr", specifier = "==2.8.4+aikido.4", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "opentelemetry-instrumentation", specifier = "==0.36b0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -237,9 +243,11 @@ requires-dist = [
     { name = "paramiko", specifier = "==2.8.1+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pdfminer-six", specifier = "==20240706+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pillow", specifier = "==12.2.0+aikido.7", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
+    { name = "pip", specifier = "==26.1.1+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "protobuf", specifier = "==6.31.1+aikido.5", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pyasn1", specifier = "==0.6.3+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pydantic-settings", specifier = "==2.14.0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
+    { name = "pygments", specifier = "==2.12.0+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pymysql", specifier = "==1.1.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pynacl", specifier = "==1.5.0+aikido.7", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pypdf2", specifier = "==3.0.1+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -701,6 +709,18 @@ wheels = [
 ]
 
 [[package]]
+name = "markdown-it-py"
+version = "2.1.0+aikido.5"
+source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
+dependencies = [
+    { name = "mdurl" },
+]
+sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/markdown-it-py/markdown_it_py-2.1.0+aikido.5.tar.gz", hash = "sha512:1fdb9702ffe1a71bf79e80a86bc93770b21027dba9c0ec48884a3a03a1875f1fd857236c5e9823cc1347c39bb1cde10e7aef635e7a30b90b554a3175394f2b24", size = 58636, upload-time = "2026-06-03T14:54:13.199Z" }
+wheels = [
+    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/markdown-it-py/markdown_it_py-2.1.0+aikido.5-py3-none-any.whl", hash = "sha512:afa34b3993db187f3a60be3888454f8e8d58595c22b50cf36679488a69fc4a26ae12df234fc2cef50335083a28a9dba2950bd29bd754de8db48e64ae4a9569eb", size = 84707, upload-time = "2026-06-03T14:54:13.199Z" },
+]
+
+[[package]]
 name = "markupsafe"
 version = "3.0.4"
 source = { registry = "https://pypi.org/simple" }
@@ -734,6 +754,21 @@ sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/mar
 wheels = [
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/marshmallow/marshmallow-3.21.3+aikido.1-py3-none-any.whl", hash = "sha512:6960b706dfa2e9b615815052981927993a2109c6add53e0c8b9800a9e8b34fe0ff36a6ee41c6b855533a10e027426737458f1aa56585467830ec55e668b5e1b8", size = 49386, upload-time = "2026-07-01T08:25:12.029Z" },
 ]
+
+[[package]]
+name = "mdurl"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729, upload-time = "2022-08-14T12:40:10.846Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979, upload-time = "2022-08-14T12:40:09.779Z" },
+]
+
+[[package]]
+name = "msgpack"
+version = "1.2.0+aikido.2"
+source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
+sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/msgpack/msgpack-1.2.0+aikido.2.tar.gz", hash = "sha512:040bf5cc824d0dcc735c874e4ec878d8de934a3c03e58c2855c122818dd8076cd73c892bc84e4d86ed59964e91a451c3753971f4a67de0f8e398d70672d083a3", size = 183401, upload-time = "2026-09-25T06:19:49.704Z" }
 
 [[package]]
 name = "multipart"
@@ -893,6 +928,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pip"
+version = "26.1.1+aikido.1"
+source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
+sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pip/pip-26.1.1+aikido.1.tar.gz", hash = "sha512:4e22d724b3dcd4a46eb8069a4bbffe4fe82fe1c79f3ea8dae78834f3e07ee5e2e06ec58f7f29b22c98976fafcdb6fc4e62afe9ea4d25872e25990b6d3c9929f3", size = 1866820, upload-time = "2026-08-14T12:12:23.979Z" }
+wheels = [
+    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pip/pip-26.1.1+aikido.1-py3-none-any.whl", hash = "sha512:b1c2ea9234cc44b78e2ba375a4c1116df0ea8731dc16aefe028c460350cd6f9db7fa2e69de53c8e6719128867cbe9aec752108cc9efebd8e1c4c824eea5ef9b8", size = 1813486, upload-time = "2026-08-14T12:12:23.306Z" },
+]
+
+[[package]]
 name = "platformdirs"
 version = "4.13.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1008,11 +1052,11 @@ wheels = [
 
 [[package]]
 name = "pygments"
-version = "2.21.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/49/2e/ced460408999b33da6b31b0021b0f37d329e202d4169aeb164493778f25b/pygments-2.21.0.tar.gz", hash = "sha256:610ca751c9bc2492b38eb9a38a7fbc93edbbb2d7182edaf34e66ae493dee5c8c", size = 5005329, upload-time = "2026-08-17T08:02:48.824Z" }
+version = "2.12.0+aikido.3"
+source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
+sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pygments/pygments-2.12.0+aikido.3.tar.gz", hash = "sha512:99d8f82cb5477ee2cfe6a4df3f2fc75707cbe884b5c6abd5e62ac89782708a6e834d5450e9d42ee592ffc0828bc83cf0037eb94c6d09f9db5e7fa1d49a8dc134", size = 4289905, upload-time = "2026-06-03T19:02:27.902Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl", hash = "sha256:2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9", size = 1250147, upload-time = "2026-08-17T08:02:44.912Z" },
+    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pygments/pygments-2.12.0+aikido.3-py3-none-any.whl", hash = "sha512:ad1f44d3d169ed703068d785f902a498007feab2f2ff546967c4245b98d2ad932dc3a40c86875987bba325fd2066cc96248dfce9b23be9e96ee25ff2c362b783", size = 1093516, upload-time = "2026-06-03T19:02:27.902Z" },
 ]
 
 [[package]]

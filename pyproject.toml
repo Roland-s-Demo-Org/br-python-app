@@ -5,6 +5,10 @@ description = "Demo app that installs Aikido-patched PyPI builds from the stagin
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
+    "markdown-it-py==2.1.0+aikido.5",
+    "msgpack==1.2.0+aikido.2",
+    "pip==26.1.1+aikido.1",
+    "pygments==2.12.0+aikido.3",
     "aiomysql==0.2.0+aikido.3",
     "asteval==1.0.5+aikido.2",
     "authlib==1.7.0+aikido.2",
@@ -66,6 +70,10 @@ url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/"
 explicit = true
 
 [tool.uv.sources]
+"markdown-it-py" = { index = "aikido" }
+"msgpack" = { index = "aikido" }
+"pip" = { index = "aikido" }
+"pygments" = { index = "aikido" }
 "aiomysql" = { index = "aikido" }
 "asteval" = { index = "aikido" }
 "authlib" = { index = "aikido" }

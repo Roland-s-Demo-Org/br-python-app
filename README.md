@@ -32,7 +32,9 @@ uv run python main.py
 | jwcrypto | 1.4+aikido.2 |
 | lxml | 6.0.4+aikido.5 |
 | markdown | 3.4.4+aikido.1 |
+| markdown-it-py | 2.1.0+aikido.5 |
 | marshmallow | 3.21.3+aikido.1 |
+| msgpack | 1.2.0+aikido.2 |
 | multipart | 1.2.1+aikido.2 |
 | numexpr | 2.8.4+aikido.4 |
 | opentelemetry-instrumentation | 0.36b0+aikido.1 |
@@ -40,9 +42,11 @@ uv run python main.py
 | paramiko | 2.8.1+aikido.1 |
 | pdfminer.six | 20240706+aikido.2 |
 | pillow | 12.2.0+aikido.7 |
+| pip | 26.1.1+aikido.1 |
 | protobuf | 6.31.1+aikido.5 |
 | pyasn1 | 0.6.3+aikido.3 |
 | pydantic-settings | 2.14.0+aikido.1 |
+| pygments | 2.12.0+aikido.3 |
 | pymysql | 1.1.0+aikido.2 |
 | pynacl | 1.5.0+aikido.7 |
 | pypdf2 | 3.0.1+aikido.2 |
