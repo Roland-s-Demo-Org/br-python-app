@@ -165,7 +165,6 @@ dependencies = [
     { name = "flask" },
     { name = "flask-cors" },
     { name = "future" },
-    { name = "gevent" },
     { name = "h11" },
     { name = "h2" },
     { name = "httplib2" },
@@ -220,7 +219,6 @@ requires-dist = [
     { name = "flask", specifier = "==3.1.2+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "flask-cors", specifier = "==3.0.10+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "future", specifier = "==1.0.0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
-    { name = "gevent", specifier = "==21.12.0+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "h11", specifier = "==0.14.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "h2", specifier = "==4.2.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "httplib2", specifier = "==0.31.2+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -508,26 +506,6 @@ source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple
 sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/future/future-1.0.0+aikido.1.tar.gz", hash = "sha512:68652149168e810b3114b0aa11e5cbd3e45e150379a4b84bed0a6c767f4306365a56d9fda93467add9f80bb01e88345e4d443159e893ac993fb11287857a10ee", size = 1228732, upload-time = "2026-08-14T12:03:03.331Z" }
 wheels = [
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/future/future-1.0.0+aikido.1-py3-none-any.whl", hash = "sha512:64f9d24d95ae691dd1d76839a258efd865ae0ecc5400114d5e5ad0209c43a8e15505f5416a8e9b9b2a84580ae57eb723f224b19a93fc3af9dfc7a1303915730f", size = 491500, upload-time = "2026-08-14T12:03:02.72Z" },
-]
-
-[[package]]
-name = "gevent"
-version = "21.12.0+aikido.3"
-source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
-dependencies = [
-    { name = "cffi", marker = "platform_python_implementation == 'CPython' and sys_platform == 'win32'" },
-    { name = "greenlet", marker = "platform_python_implementation == 'CPython'" },
-    { name = "setuptools" },
-    { name = "zope-event" },
-    { name = "zope-interface" },
-]
-sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3.tar.gz", hash = "sha512:bbfcd5b74cc9750161c091a79d63808043ba899facdf97f928cf58156e8234c9806b734526fa77379271c49bc19adfee81762aec42d62d1b0af24138cc5d044d", size = 6204554, upload-time = "2026-10-09T12:23:36.077Z" }
-wheels = [
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha512:6b5810a8fde284884383f2acf9e5e2cdd8719bfb73877ad4781fa825d42e28e07098367e262ccd20c5025f0628b73fbe6704f9c6e21c067139d9164ae94f15a2", size = 3142448, upload-time = "2026-10-09T12:23:32.89Z" },
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3-cp311-cp311-manylinux_2_28_aarch64.whl", hash = "sha512:e6f16e21746007af96a4d15f449cb70042ca73416d63792003f50cba73bb79ac58eacadf6fd2a5e9261dabed27f438433dbeaec925be6cb13faee5f5ad9acd95", size = 2001004, upload-time = "2026-10-09T12:23:33.222Z" },
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3-cp311-cp311-manylinux_2_28_x86_64.whl", hash = "sha512:2e0488dc50bb166c64014444ce466d48cd220201428b734a3cc1d720ec4654f5a29fd98f0b06149eaaab0ba188efa4385863d3045173475acb0ac5f24e427050", size = 2097741, upload-time = "2026-10-09T12:23:33.557Z" },
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha512:5e61dd70355f806448e28e881faa0e4ebafcd7db0593878f466ed2ba43d0716d716be4ee482328dfda63786ebd69ca68e51480e4a366e0e7c9ed321ca5fc40f2", size = 2005102, upload-time = "2026-10-09T12:23:33.874Z" },
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/gevent/gevent-21.12.0+aikido.3-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha512:1c353b31cff497d247202652c4855d412df2f86b3eaa33526369d654851206916dff8b55426fe45a77f079586e18aa4a5f732d863498ef71fc59371a4668e26d", size = 2123816, upload-time = "2026-10-09T12:23:34.184Z" },
 ]
 
 [[package]]
@@ -1324,28 +1302,4 @@ source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple
 sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/zipp/zipp-3.17.0+aikido.2.tar.gz", hash = "sha512:7574cbcb1f2e1d93c5fae8e9ac9d9b7e35a1fcd41c442f72a1bc575633979d50cebfe463e5a1c0b32e091d365c6b40ac3b55d79ce445e77d46316951be2840cf", size = 21054, upload-time = "2026-06-03T19:08:10.774Z" }
 wheels = [
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/zipp/zipp-3.17.0+aikido.2-py3-none-any.whl", hash = "sha512:770330369f6b574b014fb33752173e4e766790335b7784f47a1dfa1be0544e285b4dd3c955fd06ba2e7a24a75126a3b6525243dcee515057c5c1507d18858594", size = 8190, upload-time = "2026-06-03T19:08:10.774Z" },
-]
-
-[[package]]
-name = "zope-event"
-version = "6.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/93/41/faa10af34d48d9cd6fa0249a1162943ad84a9590bd1a06939981e6640416/zope_event-6.2.tar.gz", hash = "sha256:b97d5d6327067ee6b9dfcbdf606ade9ade70991e19c162e808ea39e5fcf0f8d3", size = 18958, upload-time = "2026-04-28T06:24:10.578Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/9e/33/848922889e946d4befc415c219fe516af75c49555d8e736e183bfd30db42/zope_event-6.2-py3-none-any.whl", hash = "sha256:5e755153ac4faf64c10a4b6dd3307680166a3edf65b38df22df592610f8fa874", size = 6525, upload-time = "2026-04-28T06:24:09.176Z" },
-]
-
-[[package]]
-name = "zope-interface"
-version = "8.7"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/de/ff/a1f0021a26033da0df223fd05a7455d6d2881b67daf2c6dc897b4fe0a427/zope_interface-8.7.tar.gz", hash = "sha256:0b47b62e8d0d99b24bcdd32f4f2120425e5019c3bee2ad69a0e1d75737487a96", size = 266343, upload-time = "2026-10-15T07:25:14.851Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/f2/23/707882c1e361341ac2e561ce11dca374ff08a96990e9962ac5a7b27f1c7c/zope_interface-8.7-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:a9809133ec9979d2dbcb33f6aff2cd7d30dc66cf6dbe6fc22860db93a9caf7cc", size = 218031, upload-time = "2026-10-15T07:23:45.197Z" },
-    { url = "https://files.pythonhosted.org/packages/e6/60/d2191467ea41d3432868405abfa3c3dbe72dfe0eb437289174448e463d24/zope_interface-8.7-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:88449ed0b3dccfc5a68f9a90adcd8013fc1765cfae9cdcbfc64a98e5e62259c4", size = 218520, upload-time = "2026-10-15T07:23:47.151Z" },
-    { url = "https://files.pythonhosted.org/packages/65/0b/33e58506bb79139b7433fcd7b6cc4ee970b9d0766ce2e0d617a78a6535b6/zope_interface-8.7-cp311-cp311-manylinux1_i686.manylinux2014_i686.manylinux_2_17_i686.manylinux_2_5_i686.whl", hash = "sha256:88874fef27a462fd8662d425d21f6086766d993bf25802b4e7a919122e7a3270", size = 271703, upload-time = "2026-10-15T07:23:48.714Z" },
-    { url = "https://files.pythonhosted.org/packages/c3/bf/c15b89f3381a8e84be8d1b7c4afa26a456f09489940b0c5bdad8f5fd9cdb/zope_interface-8.7-cp311-cp311-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:1613beb1fb1b4f457818c5443e985142ec9e71af391bfb26e583e0353f206792", size = 276190, upload-time = "2026-10-15T07:23:50.646Z" },
-    { url = "https://files.pythonhosted.org/packages/05/4f/074c440baf355d24344517f293b238838cb60f92b8165843e88ce1bb0982/zope_interface-8.7-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:45d7294d7a513ce81913c42ff14e0f54e75444563e50433546e7bc6406f1d1ae", size = 277644, upload-time = "2026-10-15T07:23:52.887Z" },
-    { url = "https://files.pythonhosted.org/packages/d2/ce/cb417c57138de270c409da7af39b4793e2516c70b5f93eb8b599901b7ac1/zope_interface-8.7-cp311-cp311-win_amd64.whl", hash = "sha256:0d0fbadd5a8a6fb3924514a5fc28da627a141a08d50beb8c1153b75a6046cdab", size = 220762, upload-time = "2026-10-15T07:23:54.751Z" },
-    { url = "https://files.pythonhosted.org/packages/bb/fc/df2298d38a46f103ea605548c3186fb1be0b0985d278b2612bf805f3b63a/zope_interface-8.7-cp311-cp311-win_arm64.whl", hash = "sha256:9fb6c02e64c76a69914bbb7307de3c2cb5893738dd54a08c5be201dc3c09065d", size = 220763, upload-time = "2026-10-15T07:23:56.399Z" },
 ]

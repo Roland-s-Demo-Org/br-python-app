@@ -22,7 +22,6 @@ uv run python main.py
 | flask | 3.1.2+aikido.3 |
 | flask-cors | 3.0.10+aikido.2 |
 | future | 1.0.0+aikido.1 |
-| gevent | 21.12.0+aikido.3 |
 | h11 | 0.14.0+aikido.2 |
 | h2 | 4.2.0+aikido.2 |
 | httplib2 | 0.31.2+aikido.2 |
