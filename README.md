@@ -2,7 +2,7 @@
 
 Demo Python app that installs Aikido-patched PyPI builds. Direct dependencies are pinned to `+aikido.N` versions from `https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/`, with everything else resolved from PyPI.
 
-`cbor2`, `ddtrace`, and `uv` are Linux wheels, so they install when the app is scanned or run on Linux.
+`ddtrace` and `uv` are Linux wheels, so they install when the app is scanned or run on Linux.
 
 ```bash
 uv sync
@@ -16,7 +16,6 @@ uv run python main.py
 | authlib | 1.7.0+aikido.2 |
 | black | 26.1.0+aikido.2 |
 | brotli | 1.1.0+aikido.6 |
-| cbor2 | 5.6.5+aikido.3 (sys_platform == "linux") |
 | certifi | 2023.11.17+aikido.2 |
 | cryptography | 49.0.0+aikido.3 |
 | ddtrace | 4.8.0+aikido.1 (sys_platform == "linux") |

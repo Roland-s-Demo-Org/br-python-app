@@ -157,7 +157,6 @@ dependencies = [
     { name = "authlib" },
     { name = "black" },
     { name = "brotli" },
-    { name = "cbor2", marker = "sys_platform == 'linux'" },
     { name = "certifi" },
     { name = "cryptography" },
     { name = "ddtrace", marker = "sys_platform == 'linux'" },
@@ -218,7 +217,6 @@ requires-dist = [
     { name = "authlib", specifier = "==1.7.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "black", specifier = "==26.1.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "brotli", specifier = "==1.1.0+aikido.6", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
-    { name = "cbor2", marker = "sys_platform == 'linux'", specifier = "==5.6.5+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "certifi", specifier = "==2023.11.17+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "cryptography", specifier = "==49.0.0+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "ddtrace", marker = "sys_platform == 'linux'", specifier = "==4.8.0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -292,15 +290,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/5c/a0/f4499eea31339ba709fad8ff778c6ad9afa2d87434b9771e0b37a1ab6fb1/bytecode-0.19.1.tar.gz", hash = "sha256:f59a6a51a980037f64196448504d12fb04937ae8dcb980943265e799af2943ae", size = 106830, upload-time = "2026-10-07T12:01:11.178Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b5/d2/7b937ec5bcc2fabca017e32541a0b1ef081bb5a1bb3531d382300f7a1ccc/bytecode-0.19.1-py3-none-any.whl", hash = "sha256:211a5091abd6f16f5bb3d34f1b88fc77f8f8539801a02384b51a97bdcee45f0f", size = 43473, upload-time = "2026-10-07T12:01:09.866Z" },
-]
-
-[[package]]
-name = "cbor2"
-version = "5.6.5+aikido.3"
-source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
-sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/cbor2/cbor2-5.6.5+aikido.3.tar.gz", hash = "sha512:2947de785d3da02c79a0e0c3eaa8c9a9b0867a1b809af48d1f27126f4739a23251b5e73806374d58b77fdcc99b496a11b3e063ff36643a27034296277d087013", size = 102447, upload-time = "2026-06-03T14:50:19.135Z" }
-wheels = [
-    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/cbor2/cbor2-5.6.5+aikido.3-cp311-cp311-linux_x86_64.whl", hash = "sha512:a1f95e5ba9ba71464397c51d4e862e3d0c1b6f7eb2d76aeece7eac84b59c038c3ab7bf73c94d98ef2ad9c7f4a0891580c93de6fecec8ee736adadc1b1f544dc4", size = 257692, upload-time = "2026-06-03T14:50:19.135Z" },
 ]
 
 [[package]]
