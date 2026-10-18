@@ -1,6 +1,6 @@
 import asyncio
 import tomllib
-from importlib.metadata import version
+from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 
 from starlette.applications import Starlette
@@ -15,8 +15,11 @@ def installed_versions() -> dict[str, str]:
     project = tomllib.loads((ROOT / "pyproject.toml").read_text())
     versions = {}
     for spec in project["project"]["dependencies"]:
-        name, _wanted = spec.split("==", 1)
-        versions[name] = version(name)
+        name = spec.split("==", 1)[0].split(";", 1)[0].strip()
+        try:
+            versions[name] = version(name)
+        except PackageNotFoundError:
+            continue
     return versions
 
 
