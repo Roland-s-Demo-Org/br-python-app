@@ -1,3 +1,4 @@
+--extra-index-url https://pypi.aikido.io/d31fc8ec94e6da07d30
 --extra-index-url https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/
 
 aiomysql==0.2.0+aikido.3
@@ -47,7 +48,7 @@ soupsieve==2.8.3+aikido.1
 starlette==1.3.0+aikido.1
 telnyx==4.88.1+aikido.2
 ujson==5.12.1+aikido.3
-urllib3==2.0.7
+urllib3==2.0.7+aikido.5
 werkzeug==3.1.3+aikido.4
 wheel==0.45.1+aikido.6
 zipp==3.17.0+aikido.2
