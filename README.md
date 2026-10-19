@@ -1,10 +1,10 @@
 # br-python-app
 
-Demo Python app that installs Aikido-patched PyPI builds. Direct dependencies are pinned to `+aikido.N` versions from `https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/`, except `werkzeug`, which stays on the plain PyPI release. Everything else is resolved from PyPI.
+Demo Python app that installs Aikido-patched PyPI builds. Direct dependencies are pinned to `+aikido.N` versions from `https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/`, except `pyasn1`, which stays on the plain PyPI release. Everything else is resolved from PyPI.
 
 `ddtrace` and `uv` are Linux wheels, so they install when the app is scanned or run on Linux.
 
-`werkzeug` is pinned to the plain upstream `3.1.3`. The Aikido fix for that release is `3.1.3+aikido.4`.
+`pyasn1` is pinned to the plain upstream `0.6.3`. The Aikido fix for that release is `0.6.3+aikido.3`.
 
 ```bash
 uv sync
@@ -49,7 +49,7 @@ uv run python main.py
 | pillow | 12.2.0+aikido.7 |
 | pip | 26.1.1+aikido.1 |
 | protobuf | 6.31.1+aikido.5 |
-| pyasn1 | 0.6.3+aikido.3 |
+| pyasn1 | 0.6.3 |
 | pydantic-settings | 2.14.0+aikido.1 |
 | pygments | 2.12.0+aikido.3 |
 | pymysql | 1.1.0+aikido.2 |
@@ -66,6 +66,6 @@ uv run python main.py
 | telnyx | 4.88.1+aikido.2 |
 | ujson | 5.12.1+aikido.3 |
 | uv | 0.11.11+aikido.1 (sys_platform == "linux") |
-| werkzeug | 3.1.3 |
+| werkzeug | 3.1.3+aikido.4 |
 | wheel | 0.45.1+aikido.6 |
 | zipp | 3.17.0+aikido.2 |
