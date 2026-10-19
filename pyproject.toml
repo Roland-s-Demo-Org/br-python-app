@@ -56,7 +56,7 @@ dependencies = [
     "starlette==1.3.0+aikido.1",
     "telnyx==4.88.1+aikido.2",
     "ujson==5.12.1+aikido.3",
-    "werkzeug==3.1.3+aikido.4",
+    "werkzeug==3.1.3",
     "wheel==0.45.1+aikido.6",
     "zipp==3.17.0+aikido.2",
     "ddtrace==4.8.0+aikido.1 ; sys_platform == 'linux'",
@@ -125,6 +125,5 @@ explicit = true
 "starlette" = { index = "aikido" }
 "telnyx" = { index = "aikido" }
 "ujson" = { index = "aikido" }
-"werkzeug" = { index = "aikido" }
 "wheel" = { index = "aikido" }
 "zipp" = { index = "aikido" }
