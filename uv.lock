@@ -204,6 +204,7 @@ dependencies = [
     { name = "starlette" },
     { name = "telnyx" },
     { name = "ujson" },
+    { name = "urllib3" },
     { name = "uv", marker = "sys_platform == 'linux'" },
     { name = "werkzeug" },
     { name = "wheel" },
@@ -248,7 +249,7 @@ requires-dist = [
     { name = "pillow", specifier = "==12.2.0+aikido.7", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pip", specifier = "==26.1.1+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "protobuf", specifier = "==6.31.1+aikido.5", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
-    { name = "pyasn1", specifier = "==0.6.3" },
+    { name = "pyasn1", specifier = "==0.6.3+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pydantic-settings", specifier = "==2.14.0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pygments", specifier = "==2.12.0+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "pymysql", specifier = "==1.1.0+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -264,6 +265,7 @@ requires-dist = [
     { name = "starlette", specifier = "==1.3.0+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "telnyx", specifier = "==4.88.1+aikido.2", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "ujson", specifier = "==5.12.1+aikido.3", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
+    { name = "urllib3", specifier = "==2.0.7" },
     { name = "uv", marker = "sys_platform == 'linux'", specifier = "==0.11.11+aikido.1", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "werkzeug", specifier = "==3.1.3+aikido.4", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
     { name = "wheel", specifier = "==0.45.1+aikido.6", index = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" },
@@ -1004,11 +1006,11 @@ wheels = [
 
 [[package]]
 name = "pyasn1"
-version = "0.6.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/5c/5f/6583902b6f79b399c9c40674ac384fd9cd77805f9e6205075f828ef11fb2/pyasn1-0.6.3.tar.gz", hash = "sha256:697a8ecd6d98891189184ca1fa05d1bb00e2f84b5977c481452050549c8a72cf", size = 148685, upload-time = "2026-03-17T01:06:53.382Z" }
+version = "0.6.3+aikido.3"
+source = { registry = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/simple/" }
+sdist = { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pyasn1/pyasn1-0.6.3+aikido.3.tar.gz", hash = "sha512:c297a17028e1ca3eb2efe5fa4610753954f9776d0c6c53b3f9b6296174ca983001789763e2b82a7ae0f62f2d6fe5c856a3afa0808d91cefa5a7aa71335c67fb2", size = 171891, upload-time = "2026-08-31T11:24:01.147Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5d/a0/7d793dce3fa811fe047d6ae2431c672364b462850c6235ae306c0efd025f/pyasn1-0.6.3-py3-none-any.whl", hash = "sha256:a80184d120f0864a52a073acc6fc642847d0be408e7c7252f31390c0f4eadcde", size = 83997, upload-time = "2026-03-17T01:06:52.036Z" },
+    { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/pyasn1/pyasn1-0.6.3+aikido.3-py3-none-any.whl", hash = "sha512:237bb4850fae1312b1612e3ffc521c7bdf6b427c83c5011e0f85bb8bb2d9e2aa65ad2de32a23e001b1dc61556f116302491e9f541ec4eafb1428746cc2e13db9", size = 84535, upload-time = "2026-08-31T11:24:00.513Z" },
 ]
 
 [[package]]
@@ -1322,6 +1324,15 @@ wheels = [
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/ujson/ujson-5.12.1+aikido.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha512:f2647b958c59e9590b5a650b28ef97df6e3184ddf37bb35842f14116b2e811f163f741185534ad62faebf2602c65a368b45548e75ece8119c6741ae7ea08cd62", size = 57874, upload-time = "2026-10-07T06:39:34.169Z" },
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/ujson/ujson-5.12.1+aikido.3-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha512:8c44b165ff2d6917703f8784f777583ca6d73de24ba3bfa78affedad3af0c0432d489ee209268d8fa54a585c0bc0a5c310282a15ad76bd22ac397428d57a7d32", size = 1042708, upload-time = "2026-10-07T06:39:34.389Z" },
     { url = "https://pypi-staging.aikido.io/1f8edf5e23989a796bf/packages/ujson/ujson-5.12.1+aikido.3-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha512:382450c6ca67b2922a1d8dc8ca1dbac123ea3ad0d72e0494e6d8a0eb71e8223a4019179b9656c854b2377efa31c3d87f4fbe87202ef09cc6f0d3d39326b4d3c8", size = 1092310, upload-time = "2026-10-07T06:39:34.607Z" },
+]
+
+[[package]]
+name = "urllib3"
+version = "2.0.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/af/47/b215df9f71b4fdba1025fc05a77db2ad243fa0926755a52c5e71659f4e3c/urllib3-2.0.7.tar.gz", hash = "sha256:c97dfde1f7bd43a71c8d2a58e369e9b2bf692d1334ea9f9cae55add7d0dd0f84", size = 282546, upload-time = "2023-10-17T17:46:50.542Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d2/b2/b157855192a68541a91ba7b2bbcb91f1b4faa51f8bae38d8005c034be524/urllib3-2.0.7-py3-none-any.whl", hash = "sha256:fdb6d215c776278489906c2f8916e6e7d4f5a9b602ccbcfdf7f016fc8da0596e", size = 124213, upload-time = "2023-10-17T17:46:48.538Z" },
 ]
 
 [[package]]
