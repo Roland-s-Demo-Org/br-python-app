@@ -56,7 +56,7 @@ dependencies = [
     "starlette==1.3.0+aikido.1",
     "telnyx==4.88.1+aikido.2",
     "ujson==5.12.1+aikido.3",
-    "urllib3==2.0.7",
+    "urllib3==2.0.7+aikido.5",
     "werkzeug==3.1.3+aikido.4",
     "wheel==0.45.1+aikido.6",
     "zipp==3.17.0+aikido.2",
@@ -66,6 +66,11 @@ dependencies = [
 
 [tool.uv]
 package = false
+
+[[tool.uv.index]]
+name = "aikido-pypi-repo"
+url = "https://pypi.aikido.io/d31fc8ec94e6da07d30"
+explicit = true
 
 [[tool.uv.index]]
 name = "aikido"
@@ -129,3 +134,4 @@ explicit = true
 "werkzeug" = { index = "aikido" }
 "wheel" = { index = "aikido" }
 "zipp" = { index = "aikido" }
+urllib3 = { index = "aikido-pypi-repo" }
